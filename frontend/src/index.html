@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Monogatari</title>
+</head>
+
+<body>
+    <h1>Monogatari</h1>
+    <div id="chatbot-container">
+        <textarea></textarea>
+    </div>
+
+    <div id="user-inputs-container">
+        <div id="topic-input-container">
+            <input type="text" name="topic-input">
+        </div>
+        <div id="level-input-container">
+            <input id="jlpt-level-input" type="range" min="1" max="5" step="1" name="jlpt-level" list="markers">
+            <datalist id="markers">
+                <option value="1" label="1"></option>
+                <option value="2" label="2"></option>
+                <option value="3" label="3"></option>
+                <option value="4" label="4"></option>
+                <option value="5" label="5"></option>
+            </datalist>
+        </div>
+        <div id="user-btn-container">
+            <input type="button" value="send">
+        </div>
+    </div>
+
+    <div id="lower-body-container">
+        <!-- TODO questions related features -->
+    </div>
+
+</body>
+
+</html>

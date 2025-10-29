@@ -6,7 +6,7 @@ A local webapp that generates **Japanese tales** based on a given **topic** and 
 ## Tech Stack
 
 
-**Frontend** Vanilla JS + Sass (HTMX ?)
+**Frontend** Vanilla JS + Sass
 **Backend** FastAPI (Python)
 **Data persistence** SQLite
 **AI Engine**  Ollama or similar

@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#chatbot-container textarea {
+  border-radius: 20px;
+  resize: none;
+  padding: 10px;
+  font-size: 18pt;
+  width: 70vw;
+  height: 70vw;
+}
+
+#user-inputs-container {
+  display: flex;
+  flex-flow: row;
+  column-gap: 20px;
+}
+
+#level-input-container input {
+  width: 150px;
+}
+#level-input-container datalist {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=styles.css.map */
