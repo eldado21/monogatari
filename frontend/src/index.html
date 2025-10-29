@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="app.js"></script>
     <title>Monogatari</title>
 </head>
 
 <body>
     <h1>Monogatari</h1>
     <div id="chatbot-container">
-        <textarea></textarea>
+        <textarea disabled
+            placeholder="Once you have completed options below, the bot will generate a tale for you !"></textarea>
     </div>
 
     <div id="user-inputs-container">
         <div id="topic-input-container">
-            <input type="text" name="topic-input">
+            <input id="topic-input" type="text" name="topic-input" placeholder="topic keyword">
         </div>
         <div id="level-input-container">
             <input id="jlpt-level-input" type="range" min="1" max="5" step="1" name="jlpt-level" list="markers">
@@ -29,12 +31,13 @@
             </datalist>
         </div>
         <div id="user-btn-container">
-            <input type="button" value="send">
+            <input id="send-btn" type="button" onclick="print_user_settings()" value="send">
         </div>
+
     </div>
 
-    <div id="lower-body-container">
-        <!-- TODO questions related features -->
+    <div id="feedback-container">
+        <p id="feedback"></p>
     </div>
 
 </body>
