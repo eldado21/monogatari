@@ -1,5 +1,5 @@
 html {
-  fort-size: 14pt;
+  font-size: 14pt;
 }
 
 body {
@@ -15,8 +15,8 @@ body {
   border-radius: 20px;
   resize: none;
   padding: 20px;
-  width: 70vw;
-  height: 70vw;
+  width: 50vw;
+  height: 50vh;
 }
 
 #user-inputs-container {

@@ -29,4 +29,14 @@ function print_user_settings() {
     
     feedback_p.innerHTML = `Generating N${n_lvl} story about '${topic}'...`
     feedback_p.style.color = "black"
+    request(topic, n_lvl)
 } 
+
+function request(topic, n_lvl) {
+    const params = new URLSearchParams();
+    params.append("topic", topic)
+
+    const url = `http://localhost:8000/monogatari/${params}`
+
+    fetch(url).then((response) => response.json()).then((data) => console.log(data))
+}
